@@ -1,0 +1,74 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-box {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #4a4a7b;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 20px;
+      border: 1.8px solid #ddd;
+      border-radius: 12px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background: #5a67d8;
+    }
+
+    .message {
+      text-align: center;
+      margin-bottom: 17px;
+      color: "<?php echo $type === 'error' ? '#e74c3c' : '#2ecc71'; ?";
+    }
+
+    .icon-left {
+      position: absolute;
+      left: 15px;
+      top: 40%;
+      transform: translateY(-50%);
+      color: #999;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    .input-wrapper input,
+    .input-wrapper select {
+      padding-left: 40px;
+    }
+ 
